@@ -42,7 +42,7 @@ let server = Express().use((req, res) => {
 			}
 		});
 	});
-}).listen(process.env.port || 8080);
+}).listen(process.env.PORT || 8080);
 
 let io = Socket(server).on("connection", socket => {
 	main.socket.push(socket);

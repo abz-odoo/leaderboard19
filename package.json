@@ -9,6 +9,7 @@
   "dependencies": {
     "socket.io": "latest",
     "fs": "latest",
+    "http": "latest",
     "url": "latest",
     "path": "latest",
     "express": "latest",

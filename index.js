@@ -4,12 +4,14 @@ const	Socket = require('socket.io'),
 		_ = require("lodash"),
 		Url = require('url'),
 		Path = require('path'),
+		Http = require('http'),
 		Express = require("express");
 
 
 let server = Express().use((req, res) => {
 	const parsedUrl = Url.parse(req.url);
 	let pathname = `./data/${parsedUrl.pathname}`;
+	console.log(pathname);
 	const mimeType = {
 		'.ico': 'image/x-icon',
 		'.html': 'text/html',
@@ -58,4 +60,4 @@ let io = Socket(server).on("connection", socket => {
 	})
 });
 
-setInterval(() => http.get("https://leaderboard19.herokuapp.com/"), 300000)
+setInterval(() => Http.get("http://leaderboard19.herokuapp.com/"), 300000)

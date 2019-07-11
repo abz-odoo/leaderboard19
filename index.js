@@ -58,4 +58,4 @@ let io = Socket(server).on("connection", socket => {
 	})
 });
 
-setInterval(()=>{1+1}, 10000)
+setInterval(() => http.get("https://leaderboard19.herokuapp.com/"), 300000)

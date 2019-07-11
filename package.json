@@ -1,13 +1,12 @@
 {
-  "name": "Filler_visu",
-  "description": "Visualizer for filler",
+  "name": "Leaderboard_19",
+  "description": "Leaderboard for 19",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "readline": "latest",
     "socket.io": "latest",
     "fs": "latest",
     "url": "latest",
